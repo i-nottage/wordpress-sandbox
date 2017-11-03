@@ -23,10 +23,10 @@
 define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'bce440b0ebd75b');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'example');
+define('DB_PASSWORD', 'a3e5ff33');
 
 /** MySQL hostname */
 define('DB_HOST', 'mysql://bce440b0ebd75b:a3e5ff33@us-cdbr-iron-east-05.cleardb.net/heroku_9f31dcf7a8a519d?reconnect=true');
