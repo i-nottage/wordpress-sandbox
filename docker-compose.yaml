@@ -17,3 +17,11 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: example
+
+  sass:
+    build: 
+      context: .
+      dockerfile: Dockersass
+    command: sass --poll --watch ./sass/style.scss:./style.css
+    volumes:
+      - ./wp-content/themes/because-shes-cross-all-of-the-time:/app
