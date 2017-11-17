@@ -446,15 +446,16 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: $palette-gold;
 }
 
 a:visited {
-	color: purple;
+	color: $palette-dim-purple;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: $palette-dark-gold;
+	transition: color .2s;
 }
 
 a:focus {
@@ -463,6 +464,13 @@ a:focus {
 
 a:hover, a:active {
 	outline: 0;
+}
+
+h1.site-title:hover h1.site-title:focus h1.site-title:active {
+	a:hover, a:hover, a:focus, a:active {
+		color: $palette-light-gray;
+		transition: color .2s;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1012,11 +1020,26 @@ header.entry-header {
 	margin-top:10px;
 }
 
+header.page-header {
+	padding: 10px;
+	background-color: $palette-dark-orange;
+
+	h1.page-title {
+		margin:0;
+		color:$palette-white;
+	}
+}
+
 footer.entry-footer {
 	text-align:center;
 
 	span {
 		padding: 0 7px;
+		border-left: 1px solid $palette-light-gray;
+	}
+
+	span:first-child {
+		border-left: 0;
 	}
 
 	span.divider {
@@ -1027,5 +1050,48 @@ footer.entry-footer {
 }
 
 div#comments {
+
 	padding:10px;
+
+	h2.comments-title {
+		background-color: $palette-purple;
+		color:white;
+		padding:0 10px;
+	}
+}
+
+div#respond {
+
+	h3.comment-reply-title {
+		background-color: $palette-purple;
+		color:white;
+		padding:0 10px;
+	}
+
+	form#commentform {
+		padding: 10px;
+	}
+}
+
+nav.post-navigation {
+
+	border-top:1px solid $palette-light-gray-2;
+	padding: 10px;
+
+	div.nav-next {
+
+	}
+
+	div.nav-previous {
+
+	}
+}
+
+footer.site-footer {
+	background-color:$palette-dark-gray;
+	padding:20px;
+	color: $palette-white;
+	font-size:20px;
+	border-top:10px solid $palette-orange;
+
 }

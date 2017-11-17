@@ -66,8 +66,6 @@ if ( ! function_exists( 'because_shes_cross_all_of_the_time_entry_footer' ) ) :
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 
-			echo get_divider();
-
 			echo '<span class="comments-link">';
 			comments_popup_link(
 				sprintf(
@@ -85,8 +83,6 @@ if ( ! function_exists( 'because_shes_cross_all_of_the_time_entry_footer' ) ) :
 			);
 			echo '</span>';
 		}
-
-		echo get_divider();
 
 		edit_post_link(
 			sprintf(

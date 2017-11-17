@@ -415,19 +415,24 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: royalblue; }
+  color: #e6af11; }
 
 a:visited {
-  color: purple; }
+  color: #8e8290; }
 
 a:hover, a:focus, a:active {
-  color: midnightblue; }
+  color: #89701a;
+  transition: color .2s; }
 
 a:focus {
   outline: thin dotted; }
 
 a:hover, a:active {
   outline: 0; }
+
+h1.site-title:hover h1.site-title:focus h1.site-title:active a:hover, h1.site-title:hover h1.site-title:focus h1.site-title:active a:hover, h1.site-title:hover h1.site-title:focus h1.site-title:active a:focus, h1.site-title:hover h1.site-title:focus h1.site-title:active a:active {
+  color: #dadada;
+  transition: color .2s; }
 
 /*--------------------------------------------------------------
 ## Menus
@@ -852,10 +857,20 @@ header.entry-header {
   text-align: center;
   margin-top: 10px; }
 
+header.page-header {
+  padding: 10px;
+  background-color: #c82525; }
+  header.page-header h1.page-title {
+    margin: 0;
+    color: #f2f2f2; }
+
 footer.entry-footer {
   text-align: center; }
   footer.entry-footer span {
-    padding: 0 7px; }
+    padding: 0 7px;
+    border-left: 1px solid #dadada; }
+  footer.entry-footer span:first-child {
+    border-left: 0; }
   footer.entry-footer span.divider {
     font-size: 30px;
     color: #dadada;
@@ -863,6 +878,28 @@ footer.entry-footer {
 
 div#comments {
   padding: 10px; }
+  div#comments h2.comments-title {
+    background-color: #ac8bbf;
+    color: white;
+    padding: 0 10px; }
+
+div#respond h3.comment-reply-title {
+  background-color: #ac8bbf;
+  color: white;
+  padding: 0 10px; }
+div#respond form#commentform {
+  padding: 10px; }
+
+nav.post-navigation {
+  border-top: 1px solid #e6e6e6;
+  padding: 10px; }
+
+footer.site-footer {
+  background-color: #212121;
+  padding: 20px;
+  color: #f2f2f2;
+  font-size: 20px;
+  border-top: 10px solid #d93836; }
 
 /* Content-Sidebar */
 @media screen and (min-width: 601px) {
