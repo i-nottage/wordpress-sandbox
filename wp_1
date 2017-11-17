@@ -1,4 +1,5 @@
 wp_1=~/Programs/docker/compose/heroku-demos/wordpress_1 CD=~/Programs/docker/compose/heroku-demos/wordpress_1 {
+ .gitignore
  docker-compose.yaml
  Dockersass
  index.php

@@ -851,7 +851,8 @@ section h2.widget-title {
   text-align: center; }
 section.widget {
   box-shadow: 0 16px 1px 0 #c92121;
-  padding: 10px; }
+  padding: 10px;
+  border-left: 1px solid #fce6a5; }
 
 header.entry-header {
   text-align: center;

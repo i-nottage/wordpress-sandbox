@@ -2,3 +2,5 @@
 *.sw*
 
 */.sass-cache/*
+
+wp-content/themes/because-shes-cross-all-of-the-time/.sass-cache/
